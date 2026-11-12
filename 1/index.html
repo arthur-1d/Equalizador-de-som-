@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalizador de Som com Arduino</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Equalizador de Som com Arduino</h1>
+        <p>Projeto escolar de robótica</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Como funciona um equalizador?</h2>
+            <p>Um equalizador de som é um equipamento que permite ajustar diferentes frequências de áudio. Essas frequências são divididas em três grupos principais: graves, médios e agudos. Com esses ajustes, é possível modificar o som de acordo com a preferência do usuário.</p>
+        </section>
+
+        <section>
+            <h2>Nosso projeto</h2>
+            <p>O projeto foi montado utilizando um Arduino UNO, um sensor de som KY-038, uma protoboard, LEDs, resistores e fios jumper.</p>
+            <p>A ideia era utilizar o sensor KY-038 para captar os sons do ambiente. O Arduino receberia o sinal do sensor e controlaria os LEDs, criando uma representação visual da intensidade sonora.</p>
+            <p>É importante destacar que o KY-038 detecta a presença e a intensidade do som, mas não separa as frequências em graves, médios e agudos como um equalizador convencional.</p>
+        </section>
+
+        <section>
+            <h2>Componentes utilizados</h2>
+            <ul>
+                <li><strong>Arduino UNO:</strong> controla o circuito.</li>
+                <li><strong>Sensor KY-038:</strong> capta os sons do ambiente.</li>
+                <li><strong>Protoboard:</strong> permite conectar os componentes.</li>
+                <li><strong>LEDs e resistores:</strong> mostram a resposta visual do circuito.</li>
+                <li><strong>Fios jumper:</strong> fazem as conexões.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Problema encontrado</h2>
+            <p>O projeto não funcionou como esperado devido ao mau contato entre os pinos do sensor KY-038 e a protoboard. Essa falha na conexão dificultou a transmissão do sinal até o Arduino, impedindo o funcionamento correto dos LEDs.</p>
+        </section>
+
+        <section>
+            <h2>Possíveis melhorias</h2>
+            <ul>
+                <li>Verificar se o sensor está bem encaixado na protoboard.</li>
+                <li>Conferir as conexões dos fios, da alimentação e do aterramento.</li>
+                <li>Testar o sensor separadamente antes de conectar os LEDs.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+            <p>Mesmo não funcionando como planejado, o projeto permitiu aprender sobre sensores, circuitos e programação com Arduino. Também mostrou a importância de realizar conexões corretas e testar cada componente durante a montagem.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho escolar • Robótica e Arduino</p>
+    </footer>
+</body>
+</html>
